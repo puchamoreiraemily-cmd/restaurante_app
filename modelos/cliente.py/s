@@ -1,0 +1,17 @@
+class Cliente:
+    """
+    Clase que representa a un cliente en el sistema del restaurante.
+    """
+    def __init__(self, nombre: str, cedula: str):
+        self.__nombre = nombre
+        self.__cedula = cedula
+
+    # Métodos Getter para acceder a los atributos encapsulados
+    def get_nombre(self) -> str:
+        return self.__nombre
+
+    def get_cedula(self) -> str:
+        return self.__cedula
+
+    def __str__(self) -> str:
+        return f"Cliente: {self.__nombre} (C.I.: {self.__cedula})" 
